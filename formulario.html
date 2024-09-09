@@ -10,93 +10,145 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="darkmode.css">
-
+    <link rel="stylesheet" href="darkmode.css" />
   </head>
-  <body class="bg-light text-dark">
-    <div class="container">
-      <h1 class="text-center my-4">Formulario de Datos Personales</h1>
-      <div class="card p-4 mx-auto" style="max-width: 400px">
-        <form action="#" method="post">
-          <div class="mb-3">
-            <label for="name" class="form-label">Nombre:</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              class="form-control"
-              required
-              pattern="[A-Za-z\s]{2,}"
-              title="El nombre solo puede contener letras y espacios, y debe tener al menos 2 caracteres."
-            />
+  <body class="d-flex flex-column min-vh-100 bg-light text-dark">
+    <!-- Header -->
+    <header>
+      <nav
+        class="navbar navbar-expand-lg bg-primary shadow"
+        data-bs-theme="white"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="#">Formulario Bootstrap</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-white"
+                  href="https://getbootstrap.com/docs/5.3/getting-started/introduction/"
+                  >Documentación</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Sobre Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Contacto</a>
+              </li>
+            </ul>
           </div>
-          <div class="mb-3">
-            <label for="surname" class="form-label">Apellido:</label>
-            <input
-              type="text"
-              id="surname"
-              name="surname"
-              class="form-control"
-              required
-              pattern="[A-Za-z\s]{2,}"
-              title="El apellido solo puede contener letras y espacios, y debe tener al menos 2 caracteres."
-            />
-          </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">Email:</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              class="form-control"
-              required
-              pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
-              title="Dirección de correo electrónico no válida. Incluye un signo '@' en la dirección de correo electrónico."
-            />
-          </div>
-          <div class="mb-3">
-            <label for="birthDate" class="form-label">Fecha de nacimiento:</label>
-            <input
-              type="date"
-              id="birthDate"
-              name="birthDate"
-              class="form-control"
-              required
-              min="1900-01-01"
-              title="Debes ser mayor a 18 años y seleccionar una fecha válida."
-            />
-          </div>
-          <div class="mb-3">
-            <label for="country" class="form-label">País de residencia:</label>
-            <input
-              type="text"
-              id="country"
-              name="country"
-              class="form-control"
-              required
-              pattern="[A-Za-z\s]{2,}"
-              title="El país de residencia solo puede contener letras y espacios, y debe tener al menos 2 caracteres."
-            />
-          </div>
-          <div class="mb-3">
-            <input
-              type="submit"
-              id="submitButton"
-              value="Enviar"
-              class="btn btn-primary w-100"
-            />
-          </div>
-        </form>
-      </div>
+        </div>
+      </nav>
+    </header>
 
-      <div class="text-center mt-4">
-        <button id="highContrastButton" class="btn btn-dark mx-2">
-          <span id="mensajeAltoContraste">Estilo de Alto Contraste</span> 
-        </button>
-        
+    <main class="flex-fill">
+      <div class="container">
+        <h1 class="text-center my-4">Formulario de Datos Personales</h1>
+        <div class="card p-4 mx-auto" style="max-width: 400px">
+          <form action="#" method="post">
+            <div class="mb-3">
+              <label for="name" class="form-label">Nombre:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="form-control"
+                required
+                pattern="[A-Za-z\s]{2,}"
+                title="El nombre solo puede contener letras y espacios, y debe tener al menos 2 caracteres."
+              />
+            </div>
+            <div class="mb-3">
+              <label for="surname" class="form-label">Apellido:</label>
+              <input
+                type="text"
+                id="surname"
+                name="surname"
+                class="form-control"
+                required
+                pattern="[A-Za-z\s]{2,}"
+                title="El apellido solo puede contener letras y espacios, y debe tener al menos 2 caracteres."
+              />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-control"
+                required
+                pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
+                title="Dirección de correo electrónico no válida. Incluye un signo '@' en la dirección de correo electrónico."
+              />
+            </div>
+            <div class="mb-3">
+              <label for="birthDate" class="form-label"
+                >Fecha de nacimiento:</label
+              >
+              <input
+                type="date"
+                id="birthDate"
+                name="birthDate"
+                class="form-control"
+                required
+                min="1900-01-01"
+                title="Debes ser mayor a 18 años y seleccionar una fecha válida."
+              />
+            </div>
+            <div class="mb-3">
+              <label for="country" class="form-label"
+                >País de residencia:</label
+              >
+              <input
+                type="text"
+                id="country"
+                name="country"
+                class="form-control"
+                required
+                pattern="[A-Za-z\s]{2,}"
+                title="El país de residencia solo puede contener letras y espacios, y debe tener al menos 2 caracteres."
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="submit"
+                id="submitButton"
+                value="Enviar"
+                class="btn btn-primary w-100"
+              />
+            </div>
+          </form>
+        </div>
+
+        <div class="text-center mt-4">
+          <button id="highContrastButton" class="btn btn-dark mx-2">
+            <span id="mensajeAltoContraste">Estilo de Alto Contraste</span>
+          </button>
+        </div>
       </div>
-    </div>
-    
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center text-lg-start mt-auto">
+      <div class="text-center p-3">
+        © 2024 Bootcamp CILSA:
+        <a class="text-dark" href="https://www.cilsa.org/">www.cilsa.org</a>
+      </div>
+    </footer>
+
     <script src="formulario.js"></script>
   </body>
 </html>
