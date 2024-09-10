@@ -56,7 +56,7 @@
     <main class="flex-fill">
       <div class="container">
         <div class="row">
-          <div class="d-none d-lg-block col-md-3 my-4">
+          <div class="d-none d-lg-block col-md-3 my-4 mt-5">
             <div class="card">
               <div class="card-header">
                 Consejos para Completar el Formulario
@@ -84,6 +84,20 @@
                     correcta.
                   </li>
                 </ul>
+              </div>
+            </div>
+            <!-- Botón para abrir el modal -->
+            <div class="card mt-4">
+              <div class="card-header">INTEGRANTES</div>
+              <div class="card-body text-center">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#integrantesModal"
+                >
+                  Ver Integrantes
+                </button>
               </div>
             </div>
           </div>
@@ -166,7 +180,7 @@
                 </div>
               </form>
             </div>
-            <div class="text-center mt-4">
+            <div class="text-center m-4">
               <button id="highContrastButton" class="btn btn-dark mx-2">
                 <span id="mensajeAltoContraste">Estilo de Alto Contraste</span>
               </button>
@@ -176,6 +190,51 @@
       </div>
     </main>
 
+    <!-- Modal para Integrantes -->
+    <div
+      class="modal fade"
+      id="integrantesModal"
+      tabindex="-1"
+      aria-labelledby="integrantesModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="integrantesModalLabel">INTEGRANTES</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <h5 class="card-title">Formulario Realizado por</h5>
+           
+            <ul class="mt-3">
+              <li>Celena Moscovich</li>
+              <li>Manuela Fernández</li>
+            </ul>
+            <img
+              src="ellaMate.svg"
+              alt="ilustracion"
+              class="img-fluid mx-auto d-block w-50"
+            />
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Footer -->
     <footer class="bg-light text-center text-lg-start mt-auto">
       <div class="text-center p-3">
@@ -184,6 +243,10 @@
       </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
     <script src="formulario.js"></script>
+  
+    ></script>
   </body>
 </html>

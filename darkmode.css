@@ -1,16 +1,33 @@
+.bg-primary,.btn-primary{
+  background-image: linear-gradient(220.55deg, #7CF7FF 0%, #4B73FF 100%) !important;
+}
+
+.btn-primary{
+  border:none !important;
+}
+
+.btn-primary:hover {
+  background-image: linear-gradient(220.55deg, #5fbfc6 0%, #334ba0 100%) !important;
+  border: solid 0.2em rgb(70, 70, 251) !important;
+  font-weight: 700 !important;
+}
+
 .dark-mode {
+  background-image: linear-gradient(133.84deg, #4E4E4E -16.04%, #333333 9.33%, #1A1A1A 32.02%, #1A1A1A 62.06%, #262626 87.42%, #4E4E4E 112.12%)  !important;
   background-color: #121212 !important;
 }
 
-.dark-mode .navbar {
-  background-color: #ffeb3b !important;
-  color: #000000 !important;
+nav .dark-mode .navbar {
+  background-image: linear-gradient(rgb(253, 220, 53), rgb(254, 237, 154)) !important;
+
+color: #000000 !important;
 }
 
 .dark-mode .navbar .navbar-brand,
 .dark-mode .navbar .nav-link {
   color: #000 !important;
 }
+
 
 .dark-mode .navbar .navbar-toggler {
   border-color: #000000;
@@ -19,7 +36,30 @@
 .dark-mode .navbar .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
+.dark-mode .bg-primary {
+  background-image: linear-gradient(rgb(253, 220, 53), rgb(254, 237, 154)) !important;
 
+}
+
+.dark-mode .btn-primary {
+ 
+  color: #000 !important; 
+  background-image: linear-gradient(rgb(253, 220, 53), rgb(254, 237, 154))!important; 
+}
+
+.dark-mode .modal-dialog .modal-body {
+  background-color: #1e1e1e !important;
+  color: #9b9797 !important;
+}
+
+.dark-mode .modal-header{
+  color: #000 !important; 
+  background-image: linear-gradient(rgb(253, 220, 53), rgb(254, 237, 154))!important; 
+}
+.dark-mode .modal-footer{
+  color: #000 !important; 
+  background-image: linear-gradient(rgb(253, 220, 53), rgb(254, 237, 154))!important; 
+}
 .dark-mode .card .card-header {
   background-color: #444;
   color: #fff;
@@ -52,15 +92,15 @@
 
 .dark-mode .btn-primary,
 .dark-mode .btn-dark {
-  background-color: #ffeb3b;
+  background-image: linear-gradient(rgb(253, 220, 53), rgb(254, 237, 154)) !important;
   color: #000000;
   border-color: #ffeb3b;
 }
 
 .dark-mode .btn-primary:hover,
 .dark-mode .btn-dark:hover {
-  background-color: #fbc02d;
-  border-color: #f9a825;
+  background-color: #fbc02d !important;
+  border-color: #f9a825 !important;
 }
 
 .dark-mode .form-label {
